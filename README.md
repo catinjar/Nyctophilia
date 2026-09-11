@@ -5,8 +5,9 @@ https://store.steampowered.com/app/402890/Nyctophilia/
 
 Originally built in 2015 against Java 7 and libGDX 1.2.0. The project files and
 assets were lost; everything here was recovered from the shipped Steam build. See
-[RESURRECTION.md](RESURRECTION.md) for what was missing and how it came back, and
-[UPGRADE.md](UPGRADE.md) for the move to a current libGDX.
+[RESURRECTION.md](RESURRECTION.md) for what was missing and how it came back,
+[UPGRADE.md](UPGRADE.md) for the move to a current libGDX, and
+[LOCALIZATION.md](LOCALIZATION.md) for how the Russian script was stored.
 
 ## Requirements
 
@@ -50,6 +51,7 @@ widgets and the renderer produces frames, writes screenshots to
 | `assets/` | Levels, scripts, shaders, textures, fonts, audio, localization |
 | `third-party/` | The CRT post-processing library, never published to a repository |
 | `tools/smoke/` | Build verification harness |
+| `tools/i18n/` | The ЙЦУКЕН-to-Cyrillic conversion, kept as the record of the mapping |
 | `Build/` | The 2015 Steam build, kept for reference, not tracked in git |
 
 Player progress lives in `~/.prefs/nyctophilia`, not in this directory.

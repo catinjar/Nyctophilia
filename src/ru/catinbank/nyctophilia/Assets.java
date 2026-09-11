@@ -64,6 +64,23 @@ public class Assets
 	
 	public static BitmapFont font;
 	public static BitmapFont font_menu;
+	
+	private static final String MUNRO = "stuff/Munro_en.ttf";
+	
+	// Munro has no Cyrillic. The 2015 build worked around that with stuff/Munro_ru.ttf, whose
+	// Latin slots held Cyrillic outlines, and Russian typed on a ЙЦУКЕН keyboard to reach them;
+	// the bundles now hold real Cyrillic instead (see tools/i18n/jcuken_to_cyrillic.py), so the
+	// Russian font has to be one that actually encodes it. Ark Pixel is drawn on a 10px grid,
+	// so at size 10 it lands on whole pixels the way Munro does, and it is under the SIL Open
+	// Font License - see stuff/ark-pixel-OFL.txt.
+	private static final String ARK_PIXEL = "stuff/ark-pixel-10px-proportional-latin.ttf";
+	
+	private static final String CYRILLIC =
+		"АБВГДЕЁЖЗИЙКЛМНОП"
+		+ "РСТУФХЦЧШЩЪЫЬЭЮЯ"
+		+ "абвгдеёжзийклмноп"
+		+ "рстуфхцчшщъыьэюя";
+	
 	public static I18NBundle bundle;
 	public static I18NBundle level_bundle;
 	public static I18NBundle text_bundle;
@@ -164,9 +181,13 @@ public class Assets
 		if(font != null)
 			font.dispose();
 		
-		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("stuff/Munro_" + (Settings.language ? "en" : "ru") + ".ttf"));
+		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal(Settings.language ? MUNRO : ARK_PIXEL));
 		FreeTypeFontParameter parameter = new FreeTypeFontParameter();
-		parameter.size = Settings.language ? 10 : 8;
+		parameter.size = 10;
+		// FreeType only rasterises the characters it is asked for, and DEFAULT_CHARS stops at
+		// Latin-1. Without the Cyrillic block appended, every Russian line would draw as blanks.
+		if(!Settings.language)
+			parameter.characters = FreeTypeFontGenerator.DEFAULT_CHARS + CYRILLIC;
 		font = generator.generateFont(parameter);
 		font.setColor(0.95f, 0.95f, 0.95f, 1f);
 		generator.dispose();

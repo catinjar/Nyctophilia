@@ -12,6 +12,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.utils.Align;
 import com.bitfire.postprocessing.PostProcessor;
 import com.bitfire.postprocessing.effects.CrtMonitor;
 import com.bitfire.postprocessing.filters.Combine;
@@ -192,7 +193,7 @@ public class MainMenuScreen implements Screen, InputProcessor
 		}
 		
 		Assets.font.setColor(1, 1, 1, 1);
-		Assets.font.draw(game.batch, Assets.bundle.get("use"), Settings.language ? 870 : 780, 90);
+		Assets.font.draw(game.batch, Assets.bundle.get("use"), 0, 90, VIEWPORT_WIDTH, Align.center, false);
 	}
 	
 	@Override

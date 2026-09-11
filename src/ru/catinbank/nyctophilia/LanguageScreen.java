@@ -8,6 +8,7 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.utils.Align;
 
 public class LanguageScreen implements Screen, InputProcessor
 {
@@ -43,7 +44,7 @@ public class LanguageScreen implements Screen, InputProcessor
 		game.batch.draw(Assets.flag[1], 190, 70, 60, 40);
 		
 		Assets.frame[0].draw(game.batch, 125, 0, 70, 20);
-		Assets.font.draw(game.batch, Settings.language ? "Press X" : "Yf;fnm {", Settings.language ? 145 : 135, 15);
+		Assets.font.draw(game.batch, Assets.bundle.get("use"), 125, 15, 70, Align.center, false);
 		
 		game.batch.end();
 		

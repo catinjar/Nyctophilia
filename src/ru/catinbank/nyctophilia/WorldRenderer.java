@@ -144,7 +144,7 @@ public class WorldRenderer
 				Assets.font.draw(game.batch, Assets.bundle.get(world.getMenu()[i]), 32 + i*80, 50);
 			}
 			Assets.font.setColor(1, 1, 1, 1);
-			Assets.font.draw(game.batch, Assets.bundle.get("use"), Settings.language ? 145 : 135, 15);
+			Assets.font.draw(game.batch, Assets.bundle.get("use"), 125, 15, 70, Align.center, false);
 		}
 		else
 		{
@@ -227,7 +227,7 @@ public class WorldRenderer
 		if((world.getSelected() != null || !world.getMessages().isEmpty()) && !world.getInventory().isVisible() && !world.getPlayer().getLocked())
 		{
 			Assets.frame[0].draw(game.batch, 125, 0, 70, 20);
-			Assets.font.draw(game.batch, Assets.bundle.get("use"), Settings.language ? 145 : 130, 15);
+			Assets.font.draw(game.batch, Assets.bundle.get("use"), 125, 15, 70, Align.center, false);
 		}
 		
 		if(!world.getMessages().isEmpty())
