@@ -128,6 +128,19 @@ That diff also shows the shipped build used a libGDX nightly between 1.2.0 and
 1.3.0 rather than the 1.2.0 release, since it carries `g3d.particles` classes the
 released jar does not. Nothing in the game references them.
 
+## The one warning that remains
+
+Running the jar prints a deprecation warning: LWJGL 2 reaches for
+`sun.misc.Unsafe.objectFieldOffset`, which a future JDK will remove. It is not a
+countdown to breakage. Running with `--sun-misc-unsafe-memory-access=deny`, which
+simulates that removal, produces an identical result: LWJGL notices the failure,
+falls back to its reflection accessor, and the game renders the same 561 frames
+and exits cleanly.
+
+The JNI warnings libGDX used to trigger alongside it are already gone. The fat
+jar declares `Enable-Native-Access: ALL-UNNAMED` in its manifest, which Java 24
+and later honour and older JVMs ignore, so no launch flag is needed.
+
 ## If you ever want to move off libGDX 1.2.0
 
 Staying on 1.2.0 is what makes this a small change, and it costs nothing today.
