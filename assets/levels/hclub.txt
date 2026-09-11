@@ -1,0 +1,405 @@
+{
+  "scenes": {
+    "street": {
+      "entities": {
+        "night": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 165.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "car": {
+          "position": {
+            "x": 6.0,
+            "y": 13.0
+          },
+          "bounds": {
+            "x": 6.0,
+            "y": 13.0,
+            "width": 180.0,
+            "height": 76.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 310.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 310.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goToClub",
+          "visible": true,
+          "collision": true,
+          "usable": true,
+          "event": false
+        },
+        "club": {
+          "position": {
+            "x": 239.0,
+            "y": 111.0
+          },
+          "bounds": {
+            "x": 239.0,
+            "y": 111.0,
+            "width": 80.0,
+            "height": 66.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "moon": {
+          "position": {
+            "x": 48.0,
+            "y": 137.0
+          },
+          "bounds": {
+            "x": 48.0,
+            "y": 137.0,
+            "width": 32.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {
+        "club": {
+          "position": {
+            "x": 238.0,
+            "y": 107.0
+          },
+          "bounds": {
+            "x": 238.0,
+            "y": 107.0,
+            "width": 84.0,
+            "height": 72.0
+          },
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "light": {
+          "position": {
+            "x": 162.0,
+            "y": -7.0
+          },
+          "bounds": {
+            "x": 162.0,
+            "y": -7.0,
+            "width": 202.0,
+            "height": 118.0
+          },
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 1.0,
+      "color": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    },
+    "club": {
+      "entities": {
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 330.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 330.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor3": {
+          "position": {
+            "x": 320.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 320.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor4": {
+          "position": {
+            "x": 320.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 320.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_out": {
+          "position": {
+            "x": 2.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 2.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goFromClub",
+          "visible": true,
+          "collision": true,
+          "usable": true,
+          "event": false
+        },
+        "table": {
+          "position": {
+            "x": 58.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 58.0,
+            "y": 15.0,
+            "width": 112.0,
+            "height": 48.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "table2": {
+          "position": {
+            "x": 186.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 186.0,
+            "y": 15.0,
+            "width": 112.0,
+            "height": 48.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "bar": {
+          "position": {
+            "x": 410.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 410.0,
+            "y": 15.0,
+            "width": 180.0,
+            "height": 106.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "chair": {
+          "position": {
+            "x": 383.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 383.0,
+            "y": 15.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "Talk",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 640.0,
+      "minX": 0.0,
+      "intensity": 1.0,
+      "color": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    },
+    "girl": {
+      "entities": {
+        "girl": {
+          "position": {
+            "x": 30.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 30.0,
+            "y": 15.0,
+            "width": 36.0,
+            "height": 106.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {
+        "girl": {
+          "position": {
+            "x": 2.0,
+            "y": 66.0
+          },
+          "bounds": {
+            "x": 2.0,
+            "y": 66.0,
+            "width": 60.0,
+            "height": 60.0
+          },
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.9,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    }
+  },
+  "currentSceneName": "street",
+  "name": "hclub",
+  "lightEnabled": true
+}

@@ -1,0 +1,50 @@
+function start()
+{
+	world.setMusic("Flocks of Ravens In Killing Spree");
+	world.setStepSound("");
+	world.setPauseBlocked(true);
+	world.getPlayer().setLocked(true);
+	world.getLevel().setLightEnabled(false);
+	world.getPlayer().setVisible(false);
+	
+	thread.sleep(6000);
+	world.fadeIn();
+	thread.sleep(4000);
+	world.changeScene("2");
+	thread.sleep(6000);
+	world.fadeIn();
+	thread.sleep(4000);
+	world.changeScene("3");
+	thread.sleep(6000);
+	world.fadeIn();
+	thread.sleep(4000);
+	world.changeScene("4");
+	thread.sleep(6000);
+	world.fadeIn();
+	thread.sleep(4000);
+	world.changeScene("32");
+	thread.sleep(6000);
+	world.fadeIn();
+	thread.sleep(4000);
+	world.changeScene("5");
+	thread.sleep(6000);
+	world.fadeIn();
+	thread.sleep(4000);
+	world.changeScene("6");
+	thread.sleep(6000);
+	world.fadeIn();
+	thread.sleep(4000);
+	world.changeScene("7");
+	thread.sleep(6000);
+	world.fadeIn();
+	thread.sleep(4000);
+	world.getLevel().setLightEnabled(true);
+	world.getLevel().setEffectEnabled(true);
+	world.changeScene("8");
+	thread.sleep(7000);
+	world.getLevel().getScene().getEntity("infinite").setVisible(true);
+	
+	world.setPauseBlocked(false);
+	world.getPlayer().setLocked(false);
+	world.nullSave();
+}

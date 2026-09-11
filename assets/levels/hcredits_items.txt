@@ -1,0 +1,65 @@
+{
+  "itemRects": {
+    "catinjar": {
+      "x": 0.0,
+      "y": 7.0,
+      "width": 102.0,
+      "height": 9.0
+    },
+    "catinjar3": {
+      "x": 0.0,
+      "y": 16.0,
+      "width": 120.0,
+      "height": 9.0
+    },
+    "catinjar4": {
+      "x": 0.0,
+      "y": 25.0,
+      "width": 94.0,
+      "height": 9.0
+    },
+    "catinjar5": {
+      "x": 0.0,
+      "y": 34.0,
+      "width": 127.0,
+      "height": 9.0
+    },
+    "catinjar6": {
+      "x": 0.0,
+      "y": 43.0,
+      "width": 90.0,
+      "height": 9.0
+    },
+    "catinjar7": {
+      "x": 0.0,
+      "y": 52.0,
+      "width": 29.0,
+      "height": 7.0
+    },
+    "catinjar2": {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 67.0,
+      "height": 7.0
+    },
+    "nyctophilia": {
+      "x": 30.0,
+      "y": 52.0,
+      "width": 46.0,
+      "height": 7.0
+    },
+    "infinite": {
+      "x": 80.0,
+      "y": 52.0,
+      "width": 27.0,
+      "height": 7.0
+    },
+    "32": {
+      "x": 0.0,
+      "y": 59.0,
+      "width": 108.0,
+      "height": 22.0
+    }
+  },
+  "lightRects": {}
+}

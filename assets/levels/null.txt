@@ -1,0 +1,24 @@
+{
+  "scenes": {
+  	"floor_1": {
+      "entities": {
+ 
+      },
+      "lights": {
+        
+      },
+      "startX": 360.0,
+      "maxX": 800.0,
+      "minX": 0.0,
+      "intensity": 1.0,
+      "color": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  "currentSceneName": "street",
+  "name": "",
+  "lightEnabled": true
+}

@@ -15,3 +15,20 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+# Assets recovered from the shipped Steam build. These are the only copies that
+# exist, so store them byte for byte: no end-of-line translation, even for the
+# text-shaped ones (levels, shaders, atlases, localization bundles).
+assets/** -text
+
+*.png  binary
+*.jpg  binary
+*.mp3  binary
+*.ttf  binary
+*.fnt  binary
+*.ser  binary
+*.jar  binary
+
+# Gradle wrapper
+gradlew      text eol=lf
+gradlew.bat  text eol=crlf

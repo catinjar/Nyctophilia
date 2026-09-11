@@ -1,0 +1,3058 @@
+{
+  "scenes": {
+    "floor_1": {
+      "entities": {
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 225.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 225.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 450.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 450.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor3": {
+          "position": {
+            "x": 320.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 320.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor4": {
+          "position": {
+            "x": 320.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 320.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_out": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goToStreet",
+          "visible": true,
+          "collision": true,
+          "usable": true,
+          "event": false
+        },
+        "door_kitchen": {
+          "position": {
+            "x": 102.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 102.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goToKitchen",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door_bath": {
+          "position": {
+            "x": 222.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 222.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goToBath",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door_living": {
+          "position": {
+            "x": 483.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 483.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goToLiving",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "floor5": {
+          "position": {
+            "x": 640.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 640.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "goToLiving ",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor6": {
+          "position": {
+            "x": 640.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 640.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "goToLiving ",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall4": {
+          "position": {
+            "x": 675.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 675.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_garden": {
+          "position": {
+            "x": 792.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 792.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goToGarden",
+          "visible": true,
+          "collision": true,
+          "usable": true,
+          "event": false
+        },
+        "door_store": {
+          "position": {
+            "x": 609.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 609.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goToStore",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door_up": {
+          "position": {
+            "x": 348.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 348.0,
+            "y": 15.0,
+            "width": 70.0,
+            "height": 150.0
+          },
+          "function": "goUp",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "cover": {
+          "position": {
+            "x": 17.0,
+            "y": 13.0
+          },
+          "bounds": {
+            "x": 17.0,
+            "y": 13.0,
+            "width": 40.0,
+            "height": 4.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "clicker1": {
+          "position": {
+            "x": 51.0,
+            "y": 85.0
+          },
+          "bounds": {
+            "x": 51.0,
+            "y": 85.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lights",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "clicker2": {
+          "position": {
+            "x": 744.0,
+            "y": 85.0
+          },
+          "bounds": {
+            "x": 744.0,
+            "y": 85.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lights",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "phone": {
+          "position": {
+            "x": 173.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 173.0,
+            "y": 15.0,
+            "width": 38.0,
+            "height": 52.0
+          },
+          "function": "phoneUse",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "mirror": {
+          "position": {
+            "x": 179.0,
+            "y": 90.0
+          },
+          "bounds": {
+            "x": 179.0,
+            "y": 90.0,
+            "width": 26.0,
+            "height": 36.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "picture1": {
+          "position": {
+            "x": 297.0,
+            "y": 94.0
+          },
+          "bounds": {
+            "x": 297.0,
+            "y": 94.0,
+            "width": 36.0,
+            "height": 26.0
+          },
+          "function": "lookAtPicture1",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "picture2": {
+          "position": {
+            "x": 432.0,
+            "y": 94.0
+          },
+          "bounds": {
+            "x": 432.0,
+            "y": 94.0,
+            "width": 36.0,
+            "height": 26.0
+          },
+          "function": "lookAtPicture2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "shelf": {
+          "position": {
+            "x": 558.0,
+            "y": 92.0
+          },
+          "bounds": {
+            "x": 558.0,
+            "y": 92.0,
+            "width": 36.0,
+            "height": 20.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "box": {
+          "position": {
+            "x": 684.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 684.0,
+            "y": 15.0,
+            "width": 44.0,
+            "height": 24.0
+          },
+          "function": "lookAtBox",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "light1": {
+          "position": {
+            "x": 562.0,
+            "y": 135.0
+          },
+          "bounds": {
+            "x": 562.0,
+            "y": 135.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "light2": {
+          "position": {
+            "x": 180.0,
+            "y": 135.0
+          },
+          "bounds": {
+            "x": 180.0,
+            "y": 135.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {
+        "light2": {
+          "position": {
+            "x": 39.0,
+            "y": 9.0
+          },
+          "bounds": {
+            "x": 39.0,
+            "y": 9.0,
+            "width": 300.0,
+            "height": 150.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "light1": {
+          "position": {
+            "x": 425.0,
+            "y": 10.0
+          },
+          "bounds": {
+            "x": 425.0,
+            "y": 10.0,
+            "width": 300.0,
+            "height": 150.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 800.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "floor_2": {
+      "entities": {
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 225.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 225.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 450.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 450.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor3": {
+          "position": {
+            "x": 320.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 320.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor4": {
+          "position": {
+            "x": 320.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 320.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_bed1": {
+          "position": {
+            "x": 102.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 102.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goToBed1",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door_bath": {
+          "position": {
+            "x": 609.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 609.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goToBath2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door_bed2": {
+          "position": {
+            "x": 222.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 222.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goToBed2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "floor5": {
+          "position": {
+            "x": 640.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 640.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "goToLiving ",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor6": {
+          "position": {
+            "x": 640.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 640.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "goToLiving ",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall4": {
+          "position": {
+            "x": 675.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 675.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "light1": {
+          "position": {
+            "x": 565.0,
+            "y": 135.0
+          },
+          "bounds": {
+            "x": 565.0,
+            "y": 135.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "light2": {
+          "position": {
+            "x": 180.0,
+            "y": 135.0
+          },
+          "bounds": {
+            "x": 180.0,
+            "y": 135.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "clicker1": {
+          "position": {
+            "x": 309.0,
+            "y": 81.0
+          },
+          "bounds": {
+            "x": 309.0,
+            "y": 81.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lights",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door_down": {
+          "position": {
+            "x": 348.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 348.0,
+            "y": 15.0,
+            "width": 70.0,
+            "height": 150.0
+          },
+          "function": "goDown",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door_gallery": {
+          "position": {
+            "x": 792.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 792.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goGallery",
+          "visible": true,
+          "collision": true,
+          "usable": true,
+          "event": false
+        },
+        "picture3": {
+          "position": {
+            "x": 432.0,
+            "y": 94.0
+          },
+          "bounds": {
+            "x": 432.0,
+            "y": 94.0,
+            "width": 36.0,
+            "height": 26.0
+          },
+          "function": "lookAtPicture3",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "picture4": {
+          "position": {
+            "x": 174.0,
+            "y": 94.0
+          },
+          "bounds": {
+            "x": 174.0,
+            "y": 94.0,
+            "width": 36.0,
+            "height": 26.0
+          },
+          "function": "lookAtPicture4",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "bad_wall": {
+          "position": {
+            "x": 501.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 501.0,
+            "y": 15.0,
+            "width": 72.0,
+            "height": 78.0
+          },
+          "function": "goToHidden",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "loft": {
+          "position": {
+            "x": 21.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 21.0,
+            "y": 15.0,
+            "width": 60.0,
+            "height": 150.0
+          },
+          "function": "goToLoft",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {
+        "light2": {
+          "position": {
+            "x": 42.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 42.0,
+            "y": 15.0,
+            "width": 300.0,
+            "height": 150.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "light1": {
+          "position": {
+            "x": 425.0,
+            "y": 14.0
+          },
+          "bounds": {
+            "x": 425.0,
+            "y": 14.0,
+            "width": 300.0,
+            "height": 150.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 360.0,
+      "maxX": 800.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "kitchen": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wallk1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wallk2": {
+          "position": {
+            "x": 168.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 168.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_garden": {
+          "position": {
+            "x": 312.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 312.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goFromKitchen",
+          "visible": true,
+          "collision": true,
+          "usable": true,
+          "event": false
+        },
+        "door_out": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goToCellar",
+          "visible": true,
+          "collision": true,
+          "usable": true,
+          "event": false
+        },
+        "fridge": {
+          "position": {
+            "x": 59.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 59.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "lookAtFridge",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "clock": {
+          "position": {
+            "x": 216.0,
+            "y": 105.0
+          },
+          "bounds": {
+            "x": 216.0,
+            "y": 105.0,
+            "width": 26.0,
+            "height": 26.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "table": {
+          "position": {
+            "x": 198.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 198.0,
+            "y": 15.0,
+            "width": 86.0,
+            "height": 60.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "faucet": {
+          "position": {
+            "x": 124.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 124.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 66.0
+          },
+          "function": "lookAtFaucet",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "table2": {
+          "position": {
+            "x": 124.0,
+            "y": 107.0
+          },
+          "bounds": {
+            "x": 124.0,
+            "y": 107.0,
+            "width": 66.0,
+            "height": 22.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "clicker": {
+          "position": {
+            "x": 254.0,
+            "y": 85.0
+          },
+          "bounds": {
+            "x": 254.0,
+            "y": 85.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lightsKitchen",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "lightk": {
+          "position": {
+            "x": 141.0,
+            "y": 135.0
+          },
+          "bounds": {
+            "x": 141.0,
+            "y": 135.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {
+        "lightmapk": {
+          "position": {
+            "x": 2.0,
+            "y": 14.0
+          },
+          "bounds": {
+            "x": 2.0,
+            "y": 14.0,
+            "width": 300.0,
+            "height": 150.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 260.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "bathroom": {
+      "entities": {
+        "floorb1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floorb2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wallb1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wallb2": {
+          "position": {
+            "x": 198.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 198.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_out": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goFromBath1",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "clicker": {
+          "position": {
+            "x": 42.0,
+            "y": 85.0
+          },
+          "bounds": {
+            "x": 42.0,
+            "y": 85.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lightsKitchen",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "lightk": {
+          "position": {
+            "x": 171.0,
+            "y": 132.0
+          },
+          "bounds": {
+            "x": 171.0,
+            "y": 132.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "washer": {
+          "position": {
+            "x": 258.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 258.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 62.0
+          },
+          "function": "lookAtWasher",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "bath": {
+          "position": {
+            "x": 165.0,
+            "y": 14.0
+          },
+          "bounds": {
+            "x": 165.0,
+            "y": 14.0,
+            "width": 90.0,
+            "height": 60.0
+          },
+          "function": "lookAtBath",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "faucetb": {
+          "position": {
+            "x": 119.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 119.0,
+            "y": 15.0,
+            "width": 36.0,
+            "height": 74.0
+          },
+          "function": "lookAtFaucetB",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "mirror": {
+          "position": {
+            "x": 126.0,
+            "y": 92.0
+          },
+          "bounds": {
+            "x": 126.0,
+            "y": 92.0,
+            "width": 26.0,
+            "height": 36.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "toilet": {
+          "position": {
+            "x": 76.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 76.0,
+            "y": 15.0,
+            "width": 32.0,
+            "height": 52.0
+          },
+          "function": "lookAtToilet",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {
+        "lightmapk": {
+          "position": {
+            "x": 35.0,
+            "y": 14.0
+          },
+          "bounds": {
+            "x": 35.0,
+            "y": 14.0,
+            "width": 300.0,
+            "height": 150.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "living": {
+      "entities": {
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 225.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 225.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "doorl": {
+          "position": {
+            "x": 253.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 253.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goFromLiving",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "clicker": {
+          "position": {
+            "x": 218.0,
+            "y": 85.0
+          },
+          "bounds": {
+            "x": 218.0,
+            "y": 85.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lightsKitchen",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "lightk": {
+          "position": {
+            "x": 138.0,
+            "y": 135.0
+          },
+          "bounds": {
+            "x": 138.0,
+            "y": 135.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "books": {
+          "position": {
+            "x": 62.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 62.0,
+            "y": 15.0,
+            "width": 64.0,
+            "height": 130.0
+          },
+          "function": "lookAtBooks",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "sofa": {
+          "position": {
+            "x": 143.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 143.0,
+            "y": 15.0,
+            "width": 88.0,
+            "height": 48.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "tv": {
+          "position": {
+            "x": 5.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 5.0,
+            "y": 15.0,
+            "width": 44.0,
+            "height": 82.0
+          },
+          "function": "lookAtTV",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "satan": {
+          "position": {
+            "x": 218.0,
+            "y": 12.0
+          },
+          "bounds": {
+            "x": 218.0,
+            "y": 12.0,
+            "width": 50.0,
+            "height": 130.0
+          },
+          "function": "",
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {
+        "tvlight": {
+          "position": {
+            "x": 30.0,
+            "y": 17.0
+          },
+          "bounds": {
+            "x": 30.0,
+            "y": 17.0,
+            "width": 200.0,
+            "height": 100.0
+          },
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "satanl": {
+          "position": {
+            "x": 202.0,
+            "y": 104.0
+          },
+          "bounds": {
+            "x": 202.0,
+            "y": 104.0,
+            "width": 60.0,
+            "height": 60.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "satanl2": {
+          "position": {
+            "x": 226.0,
+            "y": 106.0
+          },
+          "bounds": {
+            "x": 226.0,
+            "y": 106.0,
+            "width": 60.0,
+            "height": 60.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "store": {
+      "entities": {
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 225.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 225.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_from": {
+          "position": {
+            "x": 20.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 20.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goFromStore",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "clicker": {
+          "position": {
+            "x": 105.0,
+            "y": 85.0
+          },
+          "bounds": {
+            "x": 105.0,
+            "y": 85.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lightsKitchen",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "lightk": {
+          "position": {
+            "x": 138.0,
+            "y": 135.0
+          },
+          "bounds": {
+            "x": 138.0,
+            "y": 135.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "books": {
+          "position": {
+            "x": 256.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 256.0,
+            "y": 15.0,
+            "width": 64.0,
+            "height": 130.0
+          },
+          "function": "lookAtBooks2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "junk": {
+          "position": {
+            "x": 146.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 146.0,
+            "y": 15.0,
+            "width": 64.0,
+            "height": 84.0
+          },
+          "function": "lookAtJunk",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "box": {
+          "position": {
+            "x": 91.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 91.0,
+            "y": 15.0,
+            "width": 44.0,
+            "height": 24.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "box2": {
+          "position": {
+            "x": 152.0,
+            "y": 99.0
+          },
+          "bounds": {
+            "x": 152.0,
+            "y": 99.0,
+            "width": 44.0,
+            "height": 24.0
+          },
+          "function": " ",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "bucket": {
+          "position": {
+            "x": 230.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 230.0,
+            "y": 15.0,
+            "width": 26.0,
+            "height": 70.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {
+        "lightmapk": {
+          "position": {
+            "x": 1.0,
+            "y": 10.0
+          },
+          "bounds": {
+            "x": 1.0,
+            "y": 10.0,
+            "width": 300.0,
+            "height": 150.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "bed1": {
+      "entities": {
+        "wall1b1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2b1": {
+          "position": {
+            "x": 180.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 180.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_from": {
+          "position": {
+            "x": 253.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 253.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goFromBed1",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "clicker": {
+          "position": {
+            "x": 216.0,
+            "y": 85.0
+          },
+          "bounds": {
+            "x": 216.0,
+            "y": 85.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lightsKitchen",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "lightk": {
+          "position": {
+            "x": 138.0,
+            "y": 135.0
+          },
+          "bounds": {
+            "x": 138.0,
+            "y": 135.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "bed": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 120.0,
+            "height": 52.0
+          },
+          "function": "useBed1",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "tableb": {
+          "position": {
+            "x": 131.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 131.0,
+            "y": 15.0,
+            "width": 38.0,
+            "height": 40.0
+          },
+          "function": "lookAtTableB",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "book": {
+          "position": {
+            "x": 146.0,
+            "y": 55.0
+          },
+          "bounds": {
+            "x": 146.0,
+            "y": 55.0,
+            "width": 14.0,
+            "height": 4.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "window": {
+          "position": {
+            "x": 0.0,
+            "y": 90.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 90.0,
+            "width": 8.0,
+            "height": 46.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {
+        "windowl": {
+          "position": {
+            "x": -29.0,
+            "y": 12.0
+          },
+          "bounds": {
+            "x": -29.0,
+            "y": 12.0,
+            "width": 160.0,
+            "height": 140.0
+          },
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "bed2": {
+      "entities": {
+        "wall1b2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2b2": {
+          "position": {
+            "x": 162.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 162.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_from": {
+          "position": {
+            "x": 16.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 16.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goFromBed2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "clicker": {
+          "position": {
+            "x": 108.0,
+            "y": 85.0
+          },
+          "bounds": {
+            "x": 108.0,
+            "y": 85.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lightsKitchen",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "lightk": {
+          "position": {
+            "x": 138.0,
+            "y": 135.0
+          },
+          "bounds": {
+            "x": 138.0,
+            "y": 135.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "bed2": {
+          "position": {
+            "x": 200.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 200.0,
+            "y": 15.0,
+            "width": 120.0,
+            "height": 52.0
+          },
+          "function": "useBed2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "tablechair": {
+          "position": {
+            "x": 100.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 100.0,
+            "y": 15.0,
+            "width": 86.0,
+            "height": 60.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {
+        "lightmapk": {
+          "position": {
+            "x": -5.0,
+            "y": 12.0
+          },
+          "bounds": {
+            "x": -5.0,
+            "y": 12.0,
+            "width": 300.0,
+            "height": 150.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "bathroom2": {
+      "entities": {
+        "floorb1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floorb2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wallb1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wallb2": {
+          "position": {
+            "x": 198.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 198.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_out": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goFromBath2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "clicker": {
+          "position": {
+            "x": 41.0,
+            "y": 84.0
+          },
+          "bounds": {
+            "x": 41.0,
+            "y": 84.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lightsKitchen",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "lightk": {
+          "position": {
+            "x": 171.0,
+            "y": 132.0
+          },
+          "bounds": {
+            "x": 171.0,
+            "y": 132.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "bath": {
+          "position": {
+            "x": 186.0,
+            "y": 14.0
+          },
+          "bounds": {
+            "x": 186.0,
+            "y": 14.0,
+            "width": 90.0,
+            "height": 60.0
+          },
+          "function": "lookAtBath2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "faucetb": {
+          "position": {
+            "x": 135.0,
+            "y": 14.0
+          },
+          "bounds": {
+            "x": 135.0,
+            "y": 14.0,
+            "width": 36.0,
+            "height": 74.0
+          },
+          "function": "lookAtFaucetB2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "mirror": {
+          "position": {
+            "x": 141.0,
+            "y": 93.0
+          },
+          "bounds": {
+            "x": 141.0,
+            "y": 93.0,
+            "width": 26.0,
+            "height": 36.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "toilet": {
+          "position": {
+            "x": 78.0,
+            "y": 14.0
+          },
+          "bounds": {
+            "x": 78.0,
+            "y": 14.0,
+            "width": 32.0,
+            "height": 52.0
+          },
+          "function": "lookAtToilet2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {
+        "lightmapk": {
+          "position": {
+            "x": 28.0,
+            "y": 10.0
+          },
+          "bounds": {
+            "x": 28.0,
+            "y": 10.0,
+            "width": 300.0,
+            "height": 150.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "gallery": {
+      "entities": {
+        "forest": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 330.0,
+            "height": 180.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "rail": {
+          "position": {
+            "x": -10.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": -10.0,
+            "y": 15.0,
+            "width": 82.0,
+            "height": 48.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_out": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goFromGallery",
+          "visible": true,
+          "collision": true,
+          "usable": true,
+          "event": false
+        },
+        "floor1": {
+          "position": {
+            "x": -240.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "rail1": {
+          "position": {
+            "x": 72.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 72.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 48.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": true,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {
+        "sun": {
+          "position": {
+            "x": -89.0,
+            "y": -146.0
+          },
+          "bounds": {
+            "x": -89.0,
+            "y": -146.0,
+            "width": 600.0,
+            "height": 600.0
+          },
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "street": {
+      "entities": {
+        "grass1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "grass2": {
+          "position": {
+            "x": 320.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 320.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "fence1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 165.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "fence2": {
+          "position": {
+            "x": 240.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 240.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 165.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "fence3": {
+          "position": {
+            "x": 480.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 480.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 165.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "grass3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 12.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "grass4": {
+          "position": {
+            "x": 240.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 240.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 12.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_garden": {
+          "position": {
+            "x": 632.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 632.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goFromStreet",
+          "visible": true,
+          "collision": true,
+          "usable": true,
+          "event": false
+        },
+        "roof": {
+          "position": {
+            "x": 601.0,
+            "y": 142.0
+          },
+          "bounds": {
+            "x": 601.0,
+            "y": 142.0,
+            "width": 54.0,
+            "height": 56.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "rock": {
+          "position": {
+            "x": 604.0,
+            "y": 9.0
+          },
+          "bounds": {
+            "x": 604.0,
+            "y": 9.0,
+            "width": 36.0,
+            "height": 6.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "car": {
+          "position": {
+            "x": 22.0,
+            "y": 11.0
+          },
+          "bounds": {
+            "x": 22.0,
+            "y": 11.0,
+            "width": 180.0,
+            "height": 76.0
+          },
+          "function": "useCar",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 640.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "garden": {
+      "entities": {
+        "grass1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "fence1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 165.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "fence2": {
+          "position": {
+            "x": 240.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 240.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 165.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "grass3": {
+          "position": {
+            "x": 80.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 80.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 12.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_out": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goFromGarden",
+          "visible": true,
+          "collision": true,
+          "usable": true,
+          "event": false
+        },
+        "door_garden": {
+          "position": {
+            "x": 313.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 313.0,
+            "y": 15.0,
+            "width": 8.0,
+            "height": 125.0
+          },
+          "function": "goToBarn",
+          "visible": true,
+          "collision": true,
+          "usable": false,
+          "event": false
+        },
+        "roof": {
+          "position": {
+            "x": 30.0,
+            "y": 142.0
+          },
+          "bounds": {
+            "x": 35.0,
+            "y": 142.0,
+            "width": -54.0,
+            "height": 56.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "rock": {
+          "position": {
+            "x": 0.0,
+            "y": 9.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 9.0,
+            "width": 36.0,
+            "height": 6.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.7
+      }
+    },
+    "day": {
+      "entities": {
+        "day2": {
+          "position": {
+            "x": 144.0,
+            "y": 84.0
+          },
+          "bounds": {
+            "x": 144.0,
+            "y": 84.0,
+            "width": 20.0,
+            "height": 18.0
+          },
+          "function": "",
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "rday2": {
+          "position": {
+            "x": 133.0,
+            "y": 84.0
+          },
+          "bounds": {
+            "x": 133.0,
+            "y": 84.0,
+            "width": 66.0,
+            "height": 20.0
+          },
+          "function": "",
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 1.0,
+      "color": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  "currentSceneName": "bed1",
+  "name": "hnight1",
+  "lightEnabled": true
+}

@@ -41,3 +41,20 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# =========================
+# Build output
+# =========================
+build/
+.gradle/
+bin/
+out/
+*.class
+
+# Screenshots the game writes next to the working directory
+screenshot*.png
+
+# The Steam build this project was recovered from. Everything of value in it
+# (sources, assets, the postprocessing jar) now lives in the repo; the rest is a
+# 109 MB fat jar plus a bundled Java 7 runtime, both re-downloadable from Steam.
+Build/

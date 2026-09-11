@@ -1,0 +1,7321 @@
+{
+  "scenes": {
+    "cave1": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "stair": {
+          "position": {
+            "x": 25.0,
+            "y": 79.0
+          },
+          "bounds": {
+            "x": 25.0,
+            "y": 79.0,
+            "width": 30.0,
+            "height": 86.0
+          },
+          "function": "lookAtStair",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door_locked": {
+          "position": {
+            "x": 188.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 188.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 114.0
+          },
+          "function": "tryGo",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 188.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 188.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave2",
+          "visible": false,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave2": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave3",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "diary1": {
+          "position": {
+            "x": 159.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 159.0,
+            "y": 15.0,
+            "width": 26.0,
+            "height": 4.0
+          },
+          "function": "readDiary1",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave3": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave3",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave4",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave4": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave4",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave5",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave17",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave5": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave5",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave6",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave6": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave6",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave7",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave7": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave7",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave8",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave18",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave8": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave8",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave9",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave9": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave9",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave10",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave10": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave10",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave11",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave11": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave12",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave11",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 210.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 210.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 75.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 75.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave12": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave13",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave12",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave13": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 219.0,
+            "y": 16.0
+          },
+          "bounds": {
+            "x": 219.0,
+            "y": 16.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave14",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 77.0,
+            "y": 16.0
+          },
+          "bounds": {
+            "x": 77.0,
+            "y": 16.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave13",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave22",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 248.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 248.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 105.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 105.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave14": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave15",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave14",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave15": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave16",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave15",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave16": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave16",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "diary1": {
+          "position": {
+            "x": 200.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 200.0,
+            "y": 15.0,
+            "width": 26.0,
+            "height": 4.0
+          },
+          "function": "readDiary2",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave22": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave21",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave22",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave21": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 144.0,
+            "y": 16.0
+          },
+          "bounds": {
+            "x": 144.0,
+            "y": 16.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave23",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 7.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 7.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave20",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave21",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 173.0,
+            "y": 122.0
+          },
+          "bounds": {
+            "x": 173.0,
+            "y": 122.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 35.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 35.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave23": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 7.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 7.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave23",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 39.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 39.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave20": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 219.0,
+            "y": 16.0
+          },
+          "bounds": {
+            "x": 219.0,
+            "y": 16.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave20",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave19",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 248.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 248.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave19": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave37",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave19",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave182",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave18": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave182",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave18",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave37": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave36",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave37",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave38",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave36": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave24",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave36",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave24": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave25",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave24",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave172",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave17": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave172",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave17",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave25": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave26",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave25",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave26": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave27",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave26",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave27": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave27",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave28",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave28": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave29",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave28",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave29": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 144.0,
+            "y": 16.0
+          },
+          "bounds": {
+            "x": 144.0,
+            "y": 16.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave33",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 7.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 7.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave29",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave30",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 173.0,
+            "y": 122.0
+          },
+          "bounds": {
+            "x": 173.0,
+            "y": 122.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 35.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 35.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave30": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave30",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave31",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave31": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave31",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave32",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave32": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave32",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "jar": {
+          "position": {
+            "x": 174.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 174.0,
+            "y": 15.0,
+            "width": 28.0,
+            "height": 40.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "cat": {
+          "position": {
+            "x": 178.0,
+            "y": 17.0
+          },
+          "bounds": {
+            "x": 178.0,
+            "y": 17.0,
+            "width": 20.0,
+            "height": 28.0
+          },
+          "function": "lookAtCat",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave33": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave34",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave33",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave34": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave35",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave34",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave35": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave35",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave38": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave39",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave38",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave39": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave40",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave39",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave40": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave41",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave40",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave41": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 219.0,
+            "y": 16.0
+          },
+          "bounds": {
+            "x": 219.0,
+            "y": 16.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave41",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave42",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 248.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 248.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave42": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave43",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave42",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave46",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave43": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave44",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave43",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave44": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave44",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave45",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave45": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave45",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave46": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave47",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave46",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave47": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave53",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave47",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave53": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave49",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave54",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave53",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave49": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave50",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave49",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave50": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave51",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave50",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave51": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave52",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave51",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave52": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave52",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "diary1": {
+          "position": {
+            "x": 36.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 36.0,
+            "y": 15.0,
+            "width": 26.0,
+            "height": 4.0
+          },
+          "function": "readDiary3",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave54": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave54",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave55",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave55": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave55",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave61",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave61": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave61",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave62",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 107.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 107.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave57",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 137.0,
+            "y": 124.0
+          },
+          "bounds": {
+            "x": 137.0,
+            "y": 124.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave57": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave57",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave58",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave58": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall3": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave58",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "door2": {
+          "position": {
+            "x": 44.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 44.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goToCave59",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "arrow2": {
+          "position": {
+            "x": 74.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 74.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave59": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door": {
+          "position": {
+            "x": 176.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 176.0,
+            "y": 15.0,
+            "width": 98.0,
+            "height": 112.0
+          },
+          "function": "goFromCave59",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "arrow1": {
+          "position": {
+            "x": 207.0,
+            "y": 123.0
+          },
+          "bounds": {
+            "x": 207.0,
+            "y": 123.0,
+            "width": 40.0,
+            "height": 42.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "diary1": {
+          "position": {
+            "x": 62.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 62.0,
+            "y": 15.0,
+            "width": 26.0,
+            "height": 4.0
+          },
+          "function": "readDiary4",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave62": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave62",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "forward": {
+          "position": {
+            "x": 285.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 285.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goToCave63",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.6,
+      "color": {
+        "x": 0.5,
+        "y": 0.7,
+        "z": 0.5
+      }
+    },
+    "cave63": {
+      "entities": {
+        "floor1": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor2": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 330.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "back": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 33.0,
+            "height": 150.0
+          },
+          "function": "goFromCave63",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "well": {
+          "position": {
+            "x": 174.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 174.0,
+            "y": 15.0,
+            "width": 94.0,
+            "height": 28.0
+          },
+          "function": "lookAtWell",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "tallmen": {
+          "position": {
+            "x": 87.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 87.0,
+            "y": 15.0,
+            "width": 32.0,
+            "height": 132.0
+          },
+          "function": "",
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {},
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 0.7,
+      "color": {
+        "x": 0.5,
+        "y": 0.8,
+        "z": 0.5
+      }
+    },
+    "bed1": {
+      "entities": {
+        "wall1b1": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "wall2b1": {
+          "position": {
+            "x": 180.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 180.0,
+            "y": 15.0,
+            "width": 240.0,
+            "height": 150.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor11": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 0.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "floor22": {
+          "position": {
+            "x": 0.0,
+            "y": 165.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 165.0,
+            "width": 320.0,
+            "height": 15.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "door_from": {
+          "position": {
+            "x": 253.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 253.0,
+            "y": 15.0,
+            "width": 62.0,
+            "height": 125.0
+          },
+          "function": "goFromBed1",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "clicker": {
+          "position": {
+            "x": 216.0,
+            "y": 85.0
+          },
+          "bounds": {
+            "x": 216.0,
+            "y": 85.0,
+            "width": 7.0,
+            "height": 9.0
+          },
+          "function": "lightsKitchen",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "lightk": {
+          "position": {
+            "x": 138.0,
+            "y": 135.0
+          },
+          "bounds": {
+            "x": 138.0,
+            "y": 135.0,
+            "width": 26.0,
+            "height": 30.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "bed": {
+          "position": {
+            "x": 0.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 15.0,
+            "width": 120.0,
+            "height": 52.0
+          },
+          "function": "useBed1",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "tableb": {
+          "position": {
+            "x": 131.0,
+            "y": 15.0
+          },
+          "bounds": {
+            "x": 131.0,
+            "y": 15.0,
+            "width": 38.0,
+            "height": 40.0
+          },
+          "function": "lookAtTableB",
+          "visible": true,
+          "collision": false,
+          "usable": true,
+          "event": false
+        },
+        "book": {
+          "position": {
+            "x": 146.0,
+            "y": 55.0
+          },
+          "bounds": {
+            "x": 146.0,
+            "y": 55.0,
+            "width": 14.0,
+            "height": 4.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        },
+        "window": {
+          "position": {
+            "x": 0.0,
+            "y": 90.0
+          },
+          "bounds": {
+            "x": 0.0,
+            "y": 90.0,
+            "width": 8.0,
+            "height": 46.0
+          },
+          "function": "",
+          "visible": true,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "lights": {
+        "lightmapk": {
+          "position": {
+            "x": 3.0,
+            "y": 13.0
+          },
+          "bounds": {
+            "x": 3.0,
+            "y": 13.0,
+            "width": 300.0,
+            "height": 150.0
+          },
+          "visible": false,
+          "collision": false,
+          "usable": false,
+          "event": false
+        }
+      },
+      "startX": 30.0,
+      "maxX": 320.0,
+      "minX": 0.0,
+      "intensity": 1.0,
+      "color": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  "currentSceneName": "cave1",
+  "name": "hcave",
+  "lightEnabled": true
+}
