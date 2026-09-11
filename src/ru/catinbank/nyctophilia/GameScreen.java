@@ -245,7 +245,7 @@ public class GameScreen implements Screen, InputProcessor
 					Settings.language = !Settings.language;
 					Assets.loadLanguage();
 					Assets.loadLevelLanguage(world.getLevel().getName());
-					Assets.font.setScale(6f);
+					Assets.font.getData().setScale(6f);
 					break;
 				case 1:
 					Settings.sound = !Settings.sound;
@@ -320,5 +320,8 @@ public class GameScreen implements Screen, InputProcessor
 	public boolean touchDragged(int screenX, int screenY, int pointer) {return false;}
 
 	@Override
-	public boolean scrolled(int amount) {return false;}
+	public boolean scrolled(float amountX, float amountY) { return false; }
+
+	@Override
+	public boolean touchCancelled(int screenX, int screenY, int pointer, int button) { return false; }
 }

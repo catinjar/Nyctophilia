@@ -38,7 +38,7 @@ public class Assets
 	public static Texture light;
 	public static Texture stuff;
 	public static TextureRegion note;
-	public static Animation[][] player;
+	public static Animation<TextureRegion>[][] player;
 	public static TextureRegion player_light;
 	
 	public static Texture panelBack;
@@ -75,15 +75,18 @@ public class Assets
 		stuff = new Texture(Gdx.files.internal("stuff/inventory.png"));
 		
 		note = new TextureRegion(stuff, 0, 0, 25, 25);
-		player = new Animation[2][2];
-		player[0][0] = new Animation(5f, new TextureRegion(items, 0, 56, 16, 56), new TextureRegion(items, 16, 56, 16, 56));
-		player[0][1] = new Animation(0.16f, new TextureRegion(items, 0, 0, 16, 56), new TextureRegion(items, 16, 0, 16, 56), 
-									new TextureRegion(items, 32, 0, 16, 56), new TextureRegion(items, 48, 0, 16, 56), 
+		// Animation gained a type parameter in libGDX 1.4; arrays of it cannot be created directly.
+		@SuppressWarnings("unchecked")
+		Animation<TextureRegion>[][] anims = new Animation[2][2];
+		player = anims;
+		player[0][0] = new Animation<TextureRegion>(5f, new TextureRegion(items, 0, 56, 16, 56), new TextureRegion(items, 16, 56, 16, 56));
+		player[0][1] = new Animation<TextureRegion>(0.16f, new TextureRegion(items, 0, 0, 16, 56), new TextureRegion(items, 16, 0, 16, 56),
+									new TextureRegion(items, 32, 0, 16, 56), new TextureRegion(items, 48, 0, 16, 56),
 									new TextureRegion(items, 64, 0, 16, 56), new TextureRegion(items, 80, 0, 16, 56),
 									new TextureRegion(items, 96, 0, 16, 56), new TextureRegion(items, 112, 0, 16, 56));
-		player[1][0] = new Animation(5f, new TextureRegion(items, 0, 168, 16, 56), new TextureRegion(items, 16, 168, 16, 56));
-		player[1][1] = new Animation(0.16f, new TextureRegion(items, 0, 112, 16, 56), new TextureRegion(items, 16, 112, 16, 56), 
-									new TextureRegion(items, 32, 112, 16, 56), new TextureRegion(items, 48, 112, 16, 56), 
+		player[1][0] = new Animation<TextureRegion>(5f, new TextureRegion(items, 0, 168, 16, 56), new TextureRegion(items, 16, 168, 16, 56));
+		player[1][1] = new Animation<TextureRegion>(0.16f, new TextureRegion(items, 0, 112, 16, 56), new TextureRegion(items, 16, 112, 16, 56),
+									new TextureRegion(items, 32, 112, 16, 56), new TextureRegion(items, 48, 112, 16, 56),
 									new TextureRegion(items, 64, 112, 16, 56), new TextureRegion(items, 80, 112, 16, 56),
 									new TextureRegion(items, 96, 112, 16, 56), new TextureRegion(items, 112, 112, 16, 56));
 		player_light = new TextureRegion(light, 0, 0, 60, 60);
@@ -169,17 +172,17 @@ public class Assets
 		generator.dispose();
 		
 		FileHandle baseFileHandle = Gdx.files.internal("strings/bundle");
-		Locale locale = new Locale(Settings.language ? "en" : "ru");
+		Locale locale = Locale.of(Settings.language ? "en" : "ru");
 		bundle = I18NBundle.createBundle(baseFileHandle, locale);
 		baseFileHandle = Gdx.files.classpath("bundle");
-		locale = new Locale(Settings.language ? "en" : "ru", "text");
+		locale = Locale.of(Settings.language ? "en" : "ru", "text");
 		text_bundle = I18NBundle.createBundle(baseFileHandle, locale);
 	}
 	
 	public static void loadLevelLanguage(String name)
 	{
 		FileHandle baseFileHandle = Gdx.files.classpath("bundle");
-		Locale locale = new Locale(Settings.language ? "en" : "ru", name);
+		Locale locale = Locale.of(Settings.language ? "en" : "ru", name);
 		level_bundle = I18NBundle.createBundle(baseFileHandle, locale);
 	}
 	
@@ -205,7 +208,7 @@ public class Assets
 		}
 		
 		FileHandle baseFileHandle = Gdx.files.classpath("bundle");
-		Locale locale = new Locale(Settings.language ? "en" : "ru", name);
+		Locale locale = Locale.of(Settings.language ? "en" : "ru", name);
 		level_bundle = I18NBundle.createBundle(baseFileHandle, locale);
 	}
 	

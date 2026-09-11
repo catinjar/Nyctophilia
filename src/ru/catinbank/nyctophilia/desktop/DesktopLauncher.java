@@ -3,20 +3,23 @@ package ru.catinbank.nyctophilia.desktop;
 import ru.catinbank.nyctophilia.Nyctophilia;
 
 import com.badlogic.gdx.Files.FileType;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 
-public class DesktopLauncher 
+public class DesktopLauncher
 {
-	public static void main(String[] arg) 
+	public static void main(String[] arg)
 	{
-		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.setFromDisplayMode(LwjglApplicationConfiguration.getDesktopDisplayMode());
-		config.title = "Nyctophilia";
-		config.vSyncEnabled = true;
-		config.resizable = true;
-		config.addIcon("stuff/icon.png", FileType.Internal);
-		config.fullscreen = true;
-		new LwjglApplication(new Nyctophilia(), config);
+		MemoryBackend.select();
+
+		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
+		// The 2015 launcher read the desktop display mode and then set fullscreen, which is
+		// what setFullscreenMode does in one call: borderless at the monitor's current mode.
+		config.setFullscreenMode(Lwjgl3ApplicationConfiguration.getDisplayMode());
+		config.setTitle("Nyctophilia");
+		config.useVsync(true);
+		config.setResizable(true);
+		config.setWindowIcon(FileType.Internal, "stuff/icon.png");
+		new Lwjgl3Application(new Nyctophilia(), config);
 	}
 }

@@ -43,7 +43,8 @@ So the build was never really lost. It was sitting inside the game.
 - **`com.bitfire` post-processing**, the library behind the CRT screen effect.
   It was published to a Google Code project that no longer exists and never
   reached Maven Central, so the 2015 classes are vendored verbatim as
-  `libs/gdx-postprocessing-bitfire.jar`.
+  `libs/gdx-postprocessing-bitfire.jar`. (The libGDX upgrade later replaced that
+  jar with upstream source in `third-party/postprocessing/`.)
 - **The dependency list**, read out of `META-INF/maven/*/pom.properties`:
   libGDX 1.2.0, LWJGL 2.9.1, jlayer 1.0.1-gdx, jorbis 0.0.17, jutils 1.0.0, and
   an unversioned Gson from the 2.2/2.3 era.
@@ -107,7 +108,7 @@ wire format is unchanged and Gson 2.11 reads 2015 saves.
 | JavaScript | whatever `javax.script` provided | Rhino 1.8.0, named explicitly |
 | Gson | ~2.2 | 2.11.0 |
 | Build | unknown, lost | Gradle 9.7.1 |
-| libGDX | 1.2.0 | 1.2.0, unchanged |
+| libGDX | 1.2.0 | 1.2.0, unchanged (1.14.2 since, see [UPGRADE.md](UPGRADE.md)) |
 
 Only `DesktopLauncher.java` is new. No existing source file was edited.
 
@@ -137,11 +138,20 @@ simulates that removal, produces an identical result: LWJGL notices the failure,
 falls back to its reflection accessor, and the game renders the same 561 frames
 and exits cleanly.
 
+> That graceful fallback turned out to be an LWJGL 2 property, not a general one.
+> LWJGL 3 dies in a static initializer instead, so the upgrade had to solve this
+> rather than inherit it. See [UPGRADE.md](UPGRADE.md).
+
 The JNI warnings libGDX used to trigger alongside it are already gone. The fat
 jar declares `Enable-Native-Access: ALL-UNNAMED` in its manifest, which Java 24
 and later honour and older JVMs ignore, so no launch flag is needed.
 
 ## If you ever want to move off libGDX 1.2.0
+
+> This happened. [UPGRADE.md](UPGRADE.md) records what it actually cost, which was
+> less than the estimate below: the post-processing library needed recompiling, not
+> replacing, and the CRT effect came through untouched. The rest of this section is
+> the estimate as written beforehand.
 
 Staying on 1.2.0 is what makes this a small change, and it costs nothing today.
 Moving to a current libGDX is a genuine migration, not a version bump:

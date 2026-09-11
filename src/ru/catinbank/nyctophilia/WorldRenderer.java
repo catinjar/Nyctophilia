@@ -12,10 +12,10 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Pixmap.Format;
-import com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.utils.Align;
 import com.bitfire.postprocessing.PostProcessor;
 import com.bitfire.postprocessing.effects.CrtMonitor;
 import com.bitfire.postprocessing.filters.Combine;
@@ -65,7 +65,7 @@ public class WorldRenderer
         postProcessor.addEffect(crt);
         crt.setEnabled(true);
         
-        Assets.font.setScale(1.0f);
+        Assets.font.getData().setScale(1.0f);
 	}
 	
 	public void render()
@@ -133,7 +133,7 @@ public class WorldRenderer
 		game.batch.setProjectionMatrix(UICamera.combined);
 		game.batch.begin();
 		
-		Assets.font.setScale(1.0f);
+		Assets.font.getData().setScale(1.0f);
 		if(world.getState() == State.PAUSED_MENU)
 		{
 			for(int i = 0; i < 3; i++)
@@ -233,11 +233,11 @@ public class WorldRenderer
 		if(!world.getMessages().isEmpty())
 		{
 			Assets.frame[0].draw(game.batch, 16, 145, 288, 35);
-			Assets.font.drawWrapped(game.batch, world.getMessages().getCurrent(), 20, 175, 280);
+			Assets.font.draw(game.batch, world.getMessages().getCurrent(), 20, 175, 280, Align.left, true);
 		}
 		
 		if(!world.getNotifications().isEmpty() && !world.getInventory().isVisible() && world.getMessages().isEmpty())
-			Assets.font.drawWrapped(game.batch, world.getNotifications().getCurrent(), 2, 178, 315);
+			Assets.font.draw(game.batch, world.getNotifications().getCurrent(), 2, 178, 315, Align.left, true);
 		
 		
 		if(!world.getActions().isEmpty() && world.getMessages().isEmpty()) 
@@ -313,10 +313,10 @@ public class WorldRenderer
 	private void renderNote()
 	{
 		game.batch.draw(Assets.blackAlpha, 0, 0, 320, 180);
-		Assets.font.drawMultiLine(game.batch, 
+		Assets.font.draw(game.batch,
 				Assets.text_bundle.get(world.getInventory().getStuff(world.getInventory().getSelector().getSelected()).getName()), 120, 175);
-		Assets.font.drawWrapped(game.batch, 
-				Assets.text_bundle.get(world.getInventory().getStuff(world.getInventory().getSelector().getSelected()).getName() + "_text"), 20, 150, 280, HAlignment.CENTER);
+		Assets.font.draw(game.batch,
+				Assets.text_bundle.get(world.getInventory().getStuff(world.getInventory().getSelector().getSelected()).getName() + "_text"), 20, 150, 280, Align.center, true);
 	}
 	
 	private void updateCamera()

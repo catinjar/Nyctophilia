@@ -12,19 +12,35 @@ repositories {
 }
 
 ext {
-    gdxVersion = '1.2.0'
-    lwjglVersion = '2.9.1'
+    gdxVersion = '1.14.2'
+    lwjglVersion = '3.4.3'
     rhinoVersion = '1.8.0'
     gsonVersion = '2.11.0'
     javaTarget = 21
 }
 
+// libGDX 1.14.2 pins LWJGL 3.3.3, which does not recognise the JNI version a current JDK
+// reports and warns on every launch that it "may result in a crash". 3.4 recognises it, and
+// adds the FFM memory backend that MemoryBackend.select() asks for, which is what gets the
+// game off sun.misc.Unsafe. Overriding a pinned minor version is only safe because it was
+// checked rather than assumed: every one of the 643 LWJGL members the libGDX backend
+// references resolves against 3.4.3.
+configurations.configureEach {
+    resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == 'org.lwjgl') details.useVersion lwjglVersion
+    }
+}
+
 // The 2015 project kept sources in src/ and game data in the jar root.
 // Mapping assets/ to resources reproduces that layout exactly: Gdx.files.internal("stuff/UI.png")
 // and Gdx.files.classpath("bundle") both resolve the same way they did in the shipped build.
+//
+// third-party/postprocessing is the CRT effect. It was a jar in libs/ until the upgrade,
+// because the library was never published to a repository; the 2015 bytecode does not link
+// against a current libGDX, so it is compiled from upstream source instead. See its README.
 sourceSets {
     main {
-        java.srcDirs = ['src']
+        java.srcDirs = ['src', 'third-party/postprocessing']
         resources.srcDirs = ['assets']
     }
     smoke {
@@ -36,9 +52,13 @@ sourceSets {
 
 dependencies {
     implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
-    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
     implementation "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
     implementation "com.google.code.gson:gson:$gsonVersion"
+
+    // LWJGL 3. The 2015 build used the LWJGL 2 backend, which libGDX dropped, and whose
+    // macOS natives were x86_64 only. This one carries natives for Windows, Linux, macOS
+    // and Apple Silicon, so the fat jar runs on arm64 Macs without Rosetta.
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
 
     // Java 7 shipped Rhino behind javax.script. Java 8 swapped in Nashorn, and Java 15
     // removed it, so getEngineByName("JavaScript") returns null on anything modern.
@@ -46,14 +66,8 @@ dependencies {
     implementation "org.mozilla:rhino:$rhinoVersion"
     runtimeOnly "org.mozilla:rhino-engine:$rhinoVersion"
 
-    // Never published to Maven Central. Extracted verbatim from the shipped 2015 build.
-    implementation files('libs/gdx-postprocessing-bitfire.jar')
-
     runtimeOnly "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
     runtimeOnly "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
-    runtimeOnly "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-windows"
-    runtimeOnly "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-linux"
-    runtimeOnly "org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-osx"
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -66,12 +80,16 @@ application {
 }
 
 // --enable-native-access only exists from Java 22 on; passing it to 21 stops the JVM dead.
-def nativeAccessArgs = {
-    Integer.parseInt(JavaVersion.current().majorVersion) >= 22 ? ['--enable-native-access=ALL-UNNAMED'] : []
+// GLFW, which LWJGL 3 drives, has to own the first thread on macOS or it cannot open a window.
+def desktopJvmArgs = {
+    def args = []
+    if (Integer.parseInt(JavaVersion.current().majorVersion) >= 22) args << '--enable-native-access=ALL-UNNAMED'
+    if (System.getProperty('os.name').toLowerCase().contains('mac')) args << '-XstartOnFirstThread'
+    args
 }
 
 tasks.named('run', JavaExec) {
-    jvmArgs nativeAccessArgs()
+    jvmArgs desktopJvmArgs()
 }
 
 // Single self-contained jar, the same shape the game shipped in.
@@ -87,7 +105,11 @@ tasks.register('fatJar', Jar) {
             'Class-Path': '.',
             // Honoured from Java 24 on, ignored by older JVMs. Silences the JNI
             // restricted-method warnings that libGDX and LWJGL trigger.
-            'Enable-Native-Access': 'ALL-UNNAMED'
+            'Enable-Native-Access': 'ALL-UNNAMED',
+            // LWJGL ships its JDK-specific classes under META-INF/versions, and the JVM only
+            // looks there when the jar says so. Without this the FFM memory backend is present
+            // but invisible, and LWJGL quietly falls back to the sun.misc.Unsafe one.
+            'Multi-Release': 'true'
         )
     }
 
@@ -95,7 +117,8 @@ tasks.register('fatJar', Jar) {
     from({ configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }) {
         exclude 'META-INF/*.SF', 'META-INF/*.RSA', 'META-INF/*.DSA', 'META-INF/*.EC'
         exclude 'META-INF/MANIFEST.MF', 'META-INF/INDEX.LIST'
-        exclude 'module-info.class'
+        // Nothing here is a module, and a stray descriptor in a multi-release jar only confuses.
+        exclude 'module-info.class', 'META-INF/versions/*/module-info.class'
     }
 }
 
@@ -112,7 +135,7 @@ tasks.register('smokeTest', JavaExec) {
     mainClass = 'Smoke'
     classpath = sourceSets.smoke.runtimeClasspath
     args layout.buildDirectory.dir('smoke-shots').get().asFile.absolutePath
-    jvmArgs nativeAccessArgs()
+    jvmArgs desktopJvmArgs()
     doFirst { layout.buildDirectory.dir('smoke-shots').get().asFile.mkdirs() }
 }
 

@@ -1,11 +1,10 @@
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.PixmapIO;
-import com.badlogic.gdx.utils.ScreenUtils;
 
 import java.nio.ByteBuffer;
 
@@ -42,6 +41,20 @@ public class Smoke implements ApplicationListener {
             ru.catinbank.nyctophilia.Assets.loadLevelLanguage("intro");
             say("I18N bundle      OK  sample=\"" + ru.catinbank.nyctophilia.Assets.level_bundle.get("walking") + "\"");
         } catch (Throwable t) { say("I18N bundle probe: " + t); }
+        // The level editor behind developerMode is the one part of the game no normal run
+        // reaches, and its skin is a 2015 file whose widget styles libGDX has since reworked.
+        // Build one of each widget UIFactory makes, so an upgrade cannot break it unnoticed.
+        try {
+            ru.catinbank.framework.UIFactory.newLabel("x");
+            ru.catinbank.framework.UIFactory.newTextfield("x");
+            ru.catinbank.framework.UIFactory.newCheckBox("x");
+            ru.catinbank.framework.UIFactory.newButton("x", new com.badlogic.gdx.scenes.scene2d.utils.ClickListener());
+            ru.catinbank.framework.UIFactory.newSelectBox(new String[] {"a", "b"},
+                new com.badlogic.gdx.scenes.scene2d.utils.ChangeListener() {
+                    public void changed(ChangeEvent e, com.badlogic.gdx.scenes.scene2d.Actor a) {}
+                });
+            say("Editor UI skin   OK  label, textfield, checkbox, button, selectbox");
+        } catch (Throwable t) { fail("Editor UI skin", t); }
     }
 
     public void render() {
@@ -54,7 +67,7 @@ public class Smoke implements ApplicationListener {
     private void shot(String name) {
         try {
             int w = Gdx.graphics.getWidth(), h = Gdx.graphics.getHeight();
-            Pixmap p = ScreenUtils.getFrameBufferPixmap(0, 0, w, h);
+            Pixmap p = Pixmap.createFromFrameBuffer(0, 0, w, h);
             ByteBuffer px = p.getPixels();
             byte[] lines = new byte[w * h * 4];
             int per = w * 4;
@@ -76,11 +89,15 @@ public class Smoke implements ApplicationListener {
 
     public static void main(String[] a) {
         shotDir = a[0];
-        LwjglApplicationConfiguration c = new LwjglApplicationConfiguration();
-        c.width = 1280; c.height = 720; c.title = "Nyctophilia (smoke test)";
-        c.fullscreen = false; c.vSyncEnabled = true; c.resizable = false;
-        // libGDX otherwise ends the process with System.exit(-1), which reads as a failed build.
-        c.forceExit = false;
-        new LwjglApplication(new Smoke(), c);
+        // Same call the real launcher makes, so the smoke run exercises the shipped configuration.
+        ru.catinbank.nyctophilia.desktop.MemoryBackend.select();
+        Lwjgl3ApplicationConfiguration c = new Lwjgl3ApplicationConfiguration();
+        c.setWindowedMode(1280, 720);
+        c.setTitle("Nyctophilia (smoke test)");
+        c.useVsync(true);
+        c.setResizable(false);
+        // LWJGL 2 needed forceExit=false here, or it ended the process with System.exit(-1)
+        // and the build read that as a failure. The LWJGL 3 backend just returns from main.
+        new Lwjgl3Application(new Smoke(), c);
     }
 }

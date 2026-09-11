@@ -25,7 +25,10 @@ public class Nyctophilia extends Game
 			pm = new Pixmap(Gdx.files.internal("stuff/cursor.png"));
 		else
 			pm = new Pixmap(Gdx.files.internal("stuff/cursor2.png"));
-		Gdx.input.setCursorImage(pm, 0, 0);
+		// Gdx.input.setCursorImage is gone; cursors are objects the graphics backend owns now.
+		// newCursor copies the pixels, so the source pixmap is ours to release.
+		Gdx.graphics.setCursor(Gdx.graphics.newCursor(pm, 0, 0));
+		pm.dispose();
 		if(developerMode)
 			this.setScreen(new GameScreen(this));
 		else

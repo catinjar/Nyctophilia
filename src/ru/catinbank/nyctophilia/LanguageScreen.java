@@ -108,5 +108,8 @@ public class LanguageScreen implements Screen, InputProcessor
 	public boolean mouseMoved(int screenX, int screenY) { return false; }
 
 	@Override
-	public boolean scrolled(int amount) { return false; }
+	public boolean scrolled(float amountX, float amountY) { return false; }
+
+	@Override
+	public boolean touchCancelled(int screenX, int screenY, int pointer, int button) { return false; }
 }

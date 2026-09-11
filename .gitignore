@@ -55,6 +55,6 @@ out/
 screenshot*.png
 
 # The Steam build this project was recovered from. Everything of value in it
-# (sources, assets, the postprocessing jar) now lives in the repo; the rest is a
-# 109 MB fat jar plus a bundled Java 7 runtime, both re-downloadable from Steam.
+# (sources, assets, the postprocessing classes) now lives in the repo; the rest is
+# a 109 MB fat jar plus a bundled Java 7 runtime, both re-downloadable from Steam.
 Build/

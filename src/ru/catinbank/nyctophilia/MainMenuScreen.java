@@ -78,7 +78,7 @@ public class MainMenuScreen implements Screen, InputProcessor
         
         selected = MIN_SELECTED;
         
-        Assets.font.setScale(6f);
+        Assets.font.getData().setScale(6f);
         Assets.fader.loadMusic("Nyctophilia - Shattered Dreams");
 	}
 	
@@ -175,9 +175,9 @@ public class MainMenuScreen implements Screen, InputProcessor
 	
 	private void drawMenu()
 	{
-		Assets.font_menu.setScale(1f);
+		Assets.font_menu.getData().setScale(1f);
 		Assets.font_menu.draw(game.batch, "NYCTOPHILIA", 350, 800);
-		Assets.font_menu.setScale(0.35f);
+		Assets.font_menu.getData().setScale(0.35f);
 		Assets.font_menu.draw(game.batch, "A GAME BY DENIS VYATKIN", 745, 650);
 		
 		for(int i = 0; i < menu.length; i++)
@@ -248,7 +248,7 @@ public class MainMenuScreen implements Screen, InputProcessor
 				case 0:
 					Settings.language = !Settings.language;
 					Assets.loadLanguage();
-					Assets.font.setScale(6f);
+					Assets.font.getData().setScale(6f);
 					break;
 				case 1:
 					Settings.sound = !Settings.sound;
@@ -305,5 +305,8 @@ public class MainMenuScreen implements Screen, InputProcessor
 	public boolean mouseMoved(int screenX, int screenY) { return false; }
 
 	@Override
-	public boolean scrolled(int amount) { return false; }
+	public boolean scrolled(float amountX, float amountY) { return false; }
+
+	@Override
+	public boolean touchCancelled(int screenX, int screenY, int pointer, int button) { return false; }
 }

@@ -6,7 +6,6 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.PixmapIO;
-import com.badlogic.gdx.utils.ScreenUtils;
 
 public class ScreenshotFactory 
 {
@@ -28,7 +27,9 @@ public class ScreenshotFactory
 
     private static Pixmap getScreenshot(int x, int y, int w, int h, boolean yDown)
     {
-        final Pixmap pixmap = ScreenUtils.getFrameBufferPixmap(x, y, w, h);
+        // ScreenUtils.getFrameBufferPixmap is deprecated and forwards here. Still bottom-up,
+        // so the row flip below is still needed.
+        final Pixmap pixmap = Pixmap.createFromFrameBuffer(x, y, w, h);
 
         if (yDown) 
         {
