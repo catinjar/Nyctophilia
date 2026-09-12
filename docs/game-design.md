@@ -150,7 +150,7 @@ Three text channels, deliberately different in weight.
 
 None of the action choices except one has a mechanical consequence. They are characterisation.
 
-## The two endings, and the counter that is broken
+## The two endings, and the counter behind them
 
 After the final monologue, `hend` offers two exits: walk to her, or walk through the door that
 has just appeared.
@@ -165,21 +165,11 @@ function GoodEnding() {
 }
 ```
 
-`getFuck()` returns `Settings.actions`. **No code path anywhere increments it.**
-`World.settingsAction()`, which the scripts call to register one of these actions, plays a sound
-and returns:
+`getFuck()` returns `Settings.actions`, a counter the scripts raise by calling
+`world.settingsAction()`. It is reset to zero when a new game starts and again when the credits
+run, and it rides along in the save file, so it accumulates across the whole playthrough.
 
-```java
-public void settingsAction() { Assets.playSound("action"); }
-```
-
-`Settings.actions` is reset to zero when a new game starts and when the intro or the credits
-run, is written to and read from preferences, and is otherwise never touched. As shipped, the
-good ending is unreachable, and the door always answers with a line about maybe having done
-something differently.
-
-The intent is legible from the call sites. `settingsAction()` is called from **32** places
-against a threshold of **25**:
+`settingsAction()` is called from **32** places against a threshold of **25**:
 
 | Level | Count | What counts |
 | --- | --- | --- |
@@ -190,11 +180,19 @@ against a threshold of **25**:
 | `hcave` | 6 | Read all four diary pages, write the diary, free the cat |
 | `hpast` | 1 | Read the note she left |
 
-So the design is: look after yourself, take what you were prescribed, and read everything. Do
-at least 25 of the 32 and you are allowed to leave. That is a coherent and rather good ending
-condition, and it is one line away from working. The fix is `Settings.actions++` inside
-`settingsAction()`; it is deliberately **not** applied, because this repository preserves the
-shipped game. Anyone restoring it should treat it as a change to the game, not a bug fix.
+One of the 32 cannot be reached. Day three's diary requires the sleep goal, and no script adds
+that goal on day three, because the only way out of day three is the catacombs. The diary you
+write that evening is the one in `hcave`, which is counted separately. So a playthrough can
+collect **31**, and must collect 25 of them.
+
+The design that follows is: look after yourself, take what you were prescribed, and read
+everything the house has to tell you. Miss more than six of those and the door refuses, with a
+line about maybe having done something differently.
+
+**This was broken in the shipped build.** `World.settingsAction()` played its sound and never
+touched the counter, so `Settings.actions` never left zero and the good ending was unreachable.
+The missing increment is now in place. This is the one deliberate change to the game's
+behaviour in this repository; everything else preserves what shipped.
 
 Both endings then run the same extended ending, so nobody misses the psychologist scene.
 

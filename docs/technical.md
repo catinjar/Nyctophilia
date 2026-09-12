@@ -261,10 +261,10 @@ script calls `world.setPauseBlocked(true)` to make a cutscene unskippable.
 
 ## Known quirks worth knowing before you touch them
 
-- **The progress counter is never incremented.** `World.settingsAction()` plays a sound and
-  nothing else, while `World.getFuck()` returns `Settings.actions`, which only ever gets reset
-  to zero. `hend.js` gates the good ending on that value reaching 25. See
-  [game-design.md](game-design.md) for what this does to the endings.
+- **`World.getFuck()` is the good-ending counter.** It returns `Settings.actions`, which
+  `World.settingsAction()` raises and `hend.js` tests against 25. The shipped build never
+  incremented it, which made the good ending unreachable; that is the one behavioural fix this
+  repository applies. See [game-design.md](game-design.md).
 - **Scene-name comparisons use reference equality on strings.** `World.updateChanging` compares
   the current scene name to the next one with `!=`. It works because both sides come from the
   same interned literals in the script files.

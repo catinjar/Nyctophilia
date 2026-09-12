@@ -253,8 +253,13 @@ public class World
 		return "";
 	}
 	
+	// Counts the optional actions the good ending is gated on. hend.js opens the door at 25,
+	// and the scripts call this from 32 places: washing, the medicine, meals, the diary, and
+	// every letter and diary page in the game. The increment was missing in the shipped
+	// build, so Settings.actions never left zero and GoodEnding always refused.
 	public void settingsAction() 
 	{
+		Settings.actions++;
 		Assets.playSound("action");
 	}
 	
