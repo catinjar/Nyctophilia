@@ -220,10 +220,15 @@ scene is 600 wide and holds eighteen entities, three per lever, of which exactly
 at a time. The swap script special-cases this pair: it hides the player sprite on entering
 `lever` and shows it again on entering `lever2`.
 
-**`hend`** is eight scenes and only three usable entities in the whole level: the figure that
-starts the final sequence, and the two endings. Everything else is scripted. Its ambient values
-are the most extreme in the game, from `0.2, 0.2, 0.8` at 0.2 for the last conversation down to
-pure black at zero intensity for the psychologist scene, which is white text on nothing.
+**`hend`** is eight scenes and only three entities the player can ever press X on: the figure
+that starts the final sequence, and the two endings. Everything else is scripted. Its ambient
+values are the most extreme in the game, from `0.2, 0.2, 0.8` at 0.2 for the last conversation
+down to pure black at zero intensity for the psychologist scene, which is white text on nothing.
+
+Its `good` scene is the `corridor` scene from `hpast` reused: the same doors, the same phone,
+still carrying their `goToBed`, `Room1` and `Room2` function names from that level. The good
+ending puts him back in the corridor of the flat he shared with her, and this time he walks out.
+All of it is scenery, marked unusable, because the player is locked for the whole sequence.
 
 **`hcredits`** has no lights, no bundle entries, and nine scenes named `1` through `8` plus `32`.
 The script walks them on a timer and ends by revealing one entity named `infinite`.
@@ -277,9 +282,15 @@ If you add or change a level, all of these have to line up or it fails at runtim
 7. Item and note keys exist in `bundle_en_TEXT`, and notes also need a `_text` body.
 8. Any scene reachable while carrying the light bulb has a partner scene with a `2` suffix.
 
-Known dangling references in the shipped game, both harmless:
+Dangling references still in the game:
 
-- `hdream3` has a garden door named `goToBarn`, a function that level does not define. Using it
-  logs an exception and does nothing.
-- `hend` has a door in the good-ending scene named `goOut`, also undefined. The ending is fully
-  scripted and never waits for it.
+- `hdream3` has a garden door named `goToBarn`, a function that level does not define, and it is
+  both visible and usable. Pressing X on it logs a `NoSuchMethodException` and does nothing.
+  This one is live and unfixed.
+- `hend` had the same problem on a door in the good-ending scene named `goOut`. That entity is
+  scenery copied from `hpast`, and it is now marked unusable like the four copied entities
+  beside it, which carry stale function names of their own.
+- `hend` also has a figure in the `oldman` scene that is usable with an empty function. Nothing
+  can reach it, because the player is locked for that entire scene, but an empty function is
+  the case the `ScriptLauncher` brace quirk turns into a re-run of whatever ran last. See
+  [technical.md](technical.md).

@@ -691,7 +691,7 @@
           "function": "goOut",
           "visible": true,
           "collision": false,
-          "usable": true,
+          "usable": false,
           "event": false
         }
       },
