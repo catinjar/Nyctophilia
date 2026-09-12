@@ -9,6 +9,13 @@ assets were lost; everything here was recovered from the shipped Steam build. Se
 [UPGRADE.md](UPGRADE.md) for the move to a current libGDX, and
 [LOCALIZATION.md](LOCALIZATION.md) for how the Russian script was stored.
 
+[docs/](docs/) describes the game itself: how it is
+[built](docs/technical.md), what it
+[says](docs/story.md), how it
+[looks](docs/art.md), how it
+[plays](docs/game-design.md), and how its
+[levels](docs/levels.md) are put together.
+
 ## Requirements
 
 A JDK 21 or newer. Nothing else — the Gradle wrapper fetches its own Gradle and
@@ -48,6 +55,7 @@ widgets and the renderer produces frames, writes screenshots to
 | Path | Contents |
 | --- | --- |
 | `src/` | Game and framework sources, package `ru.catinbank` |
+| `docs/` | Knowledge base: technical, story, art, design, levels |
 | `assets/` | Levels, scripts, shaders, textures, fonts, audio, localization |
 | `third-party/` | The CRT post-processing library, never published to a repository |
 | `tools/smoke/` | Build verification harness |
