@@ -80,7 +80,10 @@ counterparts, and every character of every converted value was checked to land i
 the Cyrillic block or in punctuation the game already used — the conversion script
 reports a failure if any does not.
 
-One thing it found and did not change: `bundle_en_HDREAM2.properties` starts with a
-UTF-8 BOM, so its first key parses as U+FEFF followed by `not`, not as `not`. That key is
-never requested while hdream2 is loaded, so nothing breaks, but it is English, it
-predates this work, and it is still there.
+Comparing key sets turned up one thing that had nothing to do with Russian.
+`bundle_en_HDREAM2.properties` began with a UTF-8 BOM, and neither `I18NBundle`
+nor `PropertiesUtils` strips one, so its first key parsed as U+FEFF followed by
+`not` rather than as `not`. It was latent rather than live: hdream2.js never asks
+for that key, and the five levels that do — hcave, hclub, hday3, hday4 and hpast —
+each define their own BOM-free copy. Stripped in a separate commit; no bundle
+carries a BOM now.
